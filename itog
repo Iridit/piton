@@ -1,0 +1,5 @@
+types = ['robot', 'human']
+outframe = pd.DataFrame()
+for i in types:
+  outframe[i] = (data['whoAmI'] == i).astype(int)
+print(outframe.head(20))
